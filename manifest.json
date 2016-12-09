@@ -1,14 +1,15 @@
 {
-  "manifest_version": 2,
-  "name": "MyMetrics",
-  "author": "Marcos Filho <m.filhow@gmail.com>",
-  "version": "0.1",
-  "content_scripts": [
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "js": ["./src/content.js"]
-    }
-  ]
+	"manifest_version": 2,
+	"name": "My Metrics",
+	"author": "Marcos Filho <m.filhow@gmail.com>",
+	"version": "0.1",
+	"browser_action": {
+		"default_popup": "./src/index.html"
+	}
+	// "content_scripts": [{
+	//   "matches": [
+	//     "<all_urls>"
+	//   ],
+	//   "js": ["./src/content.js"]
+	// }]
 }
